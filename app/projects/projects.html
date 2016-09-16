@@ -2,6 +2,7 @@
   <form ng-submit="addProject(projects.new)">
     <input type="text" ng-model="projects.new" class="form-control" placeholder="Project name...">
   </form>
+  <button class="button" ng-click="addProject(projects.new)">Create</button>
   <span class="flex"></span>
   <span>Total: <strong>{{projects.todo.length + projects.progress.length + projects.done.length}}</strong> projects</span>
 </div>
