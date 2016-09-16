@@ -1,30 +1,47 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+/*/////////////////////////////////////
+// Card
+////////////////////////////////////*/
+.card {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
+  margin: 15px;
 }
 
-.menu:before {
-  content: "[";
+.card-header {
+  background: #a0dacc;
+  color: white;
+  padding: 15px;
 }
 
-.menu:after {
-  content: "]";
+/*/////////////////////////////////////
+// Project
+////////////////////////////////////*/
+.project {
+  padding: 15px;
+  background: #f9f9f9;
+  margin: 5px;
+  transition: all 100ms ease-out;
 }
 
-.menu > li {
-  display: inline;
+.project.sv-helper {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.project-placeholder {
+  padding: 50px 15px;
+  background: #e7fdf8;
+  margin: 4px;
+  border: dashed 1px #a0dacc;
+  color: #a0dacc;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+/*/////////////////////////////////////
+// Flex
+////////////////////////////////////*/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  flex: 1;
 }
