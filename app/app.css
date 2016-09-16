@@ -1,15 +1,39 @@
 /*/////////////////////////////////////
+// General
+////////////////////////////////////*/
+body {
+  background: #f1f1f1;
+  font-size: 14px;
+}
+
+/*/////////////////////////////////////
 // Card
 ////////////////////////////////////*/
 .card {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.05);
   margin: 15px;
+  background: white;
+}
+
+.card:after {
+  clear: both;
+  display: table;
+  content: "";
 }
 
 .card-header {
   background: #a0dacc;
   color: white;
   padding: 15px;
+}
+
+.card-indicator {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: 0 0 0 2px white;
 }
 
 /*/////////////////////////////////////
@@ -20,10 +44,11 @@
   background: #f9f9f9;
   margin: 5px;
   transition: all 100ms ease-out;
+  cursor: move;
 }
 
 .project.sv-helper {
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.05);
 }
 
 .project-placeholder {
@@ -44,4 +69,34 @@
 
 .flex {
   flex: 1;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+/*/////////////////////////////////////
+// Panel
+////////////////////////////////////*/
+.panel {
+  padding: 25px 15px;
+  background: #a0dacc;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/*/////////////////////////////////////
+// Form
+////////////////////////////////////*/
+.form-control {
+  border-radius: 3px;
+  padding: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid #a0dacc;
+  min-width: 300px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 3px #45edf9;
+  background: rgba(255,255,255,0.9);
 }

@@ -1,5 +1,13 @@
+<div class="panel flex-row flex-align-center">
+  <form ng-submit="addProject(projects.new)">
+    <input type="text" ng-model="projects.new" class="form-control" placeholder="Project name...">
+  </form>
+  <span class="flex"></span>
+  <span>Total: <strong>{{projects.todo.length + projects.progress.length + projects.done.length}}</strong> projects</span>
+</div>
+
 <div sv-root class="flex-row">
-  <zt-stage zt-projects="projects.todo" zt-title="'To Do'" class="flex"></zt-stage>
-  <zt-stage zt-projects="projects.progress" zt-title="'In Progress'" class="flex"></zt-stage>  
-  <zt-stage zt-projects="projects.done" zt-title="'Done'" class="flex"></zt-stage>  
+  <zt-stage zt-projects="projects.todo" zt-title="'To Do'" zt-color="'#12c3ff'" class="flex"></zt-stage>
+  <zt-stage zt-projects="projects.progress" zt-title="'In Progress'" zt-color="'#ffc40b'" class="flex"></zt-stage>  
+  <zt-stage zt-projects="projects.done" zt-title="'Done'" zt-color="'#2bf978'" class="flex"></zt-stage>  
 </div>

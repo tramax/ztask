@@ -10,7 +10,8 @@ angular.module('zt-stage', [])
   	restrict: 'E',
   	scope: {
       list: '=ztProjects',
-      title: '=ztTitle'
+      title: '=ztTitle',
+      color: '=ztColor'
     },
     templateUrl: 'common/directives/stage/stage.html'
   };
