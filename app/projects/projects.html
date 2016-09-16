@@ -1,35 +1,5 @@
 <div sv-root class="flex-row">
-  <div sv-part="projects.todo" class="card flex">
-    <div class="card-header flex-row">
-      <span>To Do</span>
-      <span class="flex"></span>
-      <span>{{projects.todo.length}} projects</span>
-    </div>
-    <div ng-repeat="item in projects.todo" sv-element class="project">
-      <div>{{item}}</div>
-    </div>
-    <div sv-placeholder class="project-placeholder">From To Do</div>
-  </div>
-  <div sv-part="projects.progress" class="card flex">
-    <div class="card-header flex-row">
-      <span>In Progress</span>
-      <span class="flex"></span>
-      <span>{{projects.progress.length}} projects</span>
-    </div>
-    <div ng-repeat="item in projects.progress" sv-element class="project">
-      <div>{{item}}</div>
-    </div>
-    <div sv-placeholder class="project-placeholder">From In Progress</div>
-  </div>
-  <div sv-part="projects.done" class="card flex">
-    <div class="card-header flex-row">
-      <span>Done</span>
-      <span class="flex"></span>
-      <span>{{projects.done.length}} projects</span>
-    </div>
-    <div ng-repeat="item in projects.done" sv-element class="project">
-      <div>{{item}}</div>
-    </div>
-    <div sv-placeholder class="project-placeholder">From Done</div>
-  </div>
+  <zt-stage zt-projects="projects.todo" zt-title="'To Do'" class="flex"></zt-stage>
+  <zt-stage zt-projects="projects.progress" zt-title="'In Progress'" class="flex"></zt-stage>  
+  <zt-stage zt-projects="projects.done" zt-title="'Done'" class="flex"></zt-stage>  
 </div>

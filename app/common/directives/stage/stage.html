@@ -1,0 +1,11 @@
+<div sv-part="list" class="card">
+  <div class="card-header flex-row">
+    <span>{{title}}</span>
+    <span class="flex"></span>
+    <span>{{list.length}} projects</span>
+  </div>
+  <div ng-repeat="item in list" sv-element class="project">
+    <div>{{item}}</div>
+  </div>
+  <div sv-placeholder class="project-placeholder">From {{title}}</div>
+</div>
