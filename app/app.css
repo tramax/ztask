@@ -93,10 +93,11 @@ body {
   background: rgba(255,255,255,0.7);
   border: 1px solid #a0dacc;
   min-width: 300px;
+  transition: all 250ms;
 }
 
 .form-control:focus {
   outline: none;
   box-shadow: 0 0 3px #45edf9;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
 }

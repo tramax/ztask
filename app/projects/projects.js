@@ -17,17 +17,24 @@ angular.module('myApp.projects', ['ngRoute', 'zt-stage'])
 	$scope.projects.done = [];
 
 	$scope.addProject = function(project) {
+		var allProjects = $scope.projects.todo.concat($scope.projects.progress, $scope.projects.done);
+
+		// Check if the project name is empty
 		if (project.length === 0) {
 			alert('Please enter a project name.')
 			return;
 		}
-		if ($scope.projects.todo.indexOf(project) > -1) {
+
+		// Check if the project name is duplicated
+		if (allProjects.indexOf(project) > -1) {
 			alert('This project name is taken. Please enter a different name.')
 			return; 
 		}
+
+		// Add the new project to To Do list
 		$scope.projects.todo.push(project);
+
+		// Reset input value
 		$scope.projects.new = '';
 	};
-
-
 }]);
