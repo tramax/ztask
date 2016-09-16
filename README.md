@@ -1,6 +1,6 @@
 # ztask — a task management app
 
-This project is a simple task management app
+This project is a simple task management app.
 
 ## Getting Started
 
@@ -65,3 +65,16 @@ npm start
 ```
 
 Now browse to the app at `http://localhost:8000/index.html`.
+
+[bower]: http://bower.io
+[git]: http://git-scm.com/
+[http-server]: https://github.com/nodeapps/http-server
+[jasmine]: https://jasmine.github.io
+[jdk]: https://en.wikipedia.org/wiki/Java_Development_Kit
+[jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[karma]: https://karma-runner.github.io
+[node]: https://nodejs.org
+[npm]: https://www.npmjs.org/
+[protractor]: https://github.com/angular/protractor
+[selenium]: http://docs.seleniumhq.org/
+[travis]: https://travis-ci.org/
