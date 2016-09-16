@@ -1,6 +1,6 @@
 # ztask — a task management app
 
-This project is a simple task management app.
+This project is a simple task management app that can be easily customised to suit your workflow.
 
 ## Getting Started
 
@@ -48,14 +48,14 @@ npm install
 Behind the scenes this will also call `bower install`.  You should find that you have two new
 folders in your project.
 
-If you encounter access restriction problem, run `sudo npm install` and then `bower install`.
-
 * `node_modules` - contains the npm packages for the tools we need
 * `app/bower_components` - contains the angular framework files
 
 *Note that the `bower_components` folder would normally be installed in the root folder but
 ztask changes this location through the `.bowerrc` file.  Putting it in the app folder makes
 it easier to serve the files by a webserver.*
+
+If you encounter access restriction problem, run `sudo npm install` and then `bower install`.
 
 ### Run the Application
 
