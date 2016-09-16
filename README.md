@@ -48,6 +48,8 @@ npm install
 Behind the scenes this will also call `bower install`.  You should find that you have two new
 folders in your project.
 
+If you encounter access restriction problem, run `sudo npm install` and then `bower install`.
+
 * `node_modules` - contains the npm packages for the tools we need
 * `app/bower_components` - contains the angular framework files
 
@@ -64,7 +66,7 @@ this server is:
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000/index.html`.
+Now browse to the app at `http://localhost:8000`.
 
 [bower]: http://bower.io
 [git]: http://git-scm.com/

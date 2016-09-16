@@ -47,6 +47,10 @@ body {
   cursor: move;
 }
 
+.project:hover {
+  background: #efefef;
+}
+
 .project.sv-helper {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.05);
 }
